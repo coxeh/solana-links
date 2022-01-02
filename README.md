@@ -3,6 +3,16 @@ Solana links is a proof of concept application not ment for production. This was
 
 The application will allow you to register a username if it has not already been taken, and then create links to your "homepage" that are all stored on the blockchain. There is no backend apart from using the solana devnet, all data is stored in the blockchain.
 
+**Important Note: I do not know 100% if this is secure.**
+
+### Features
+
+* Anchor Framework
+* PDA (Program Devised Address)
+* Instruction Signing
+* Owner/Authority Validation of Accounts
+* Closing Accounts
+
 ## Deployment of Solana Program
 Deploy the program first you will need to start the solana container using `docker-compose up` once done you may run this commands to upload to the devnet
 
@@ -19,6 +29,10 @@ The front end of the applcationis built using vuejs and nuxt as a single page ap
 Will create a the files to be uploaded in `src/aim/app/dist`
 
 ## Example
+
+The appliation requires the Phantom Wallet and it must be set to devnet. Make sure you have some SOL then register a new account.
+
 [Example application](http://a1m.coxeh.com/)
 
 [Example user page](http://a1m.coxeh.com/user/coxeh)
+
