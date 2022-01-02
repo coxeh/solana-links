@@ -36,3 +36,11 @@ The appliation requires the Phantom Wallet and it must be set to devnet. Make su
 
 [Example user page](http://a1m.coxeh.com/user/coxeh)
 
+## Todo
+
+* Work out how rent of accounts and links work. See if I can calculate for all accounts and display when things expire
+* Validation of Url. Currently commented off due to failing to upload to devnet which i presume is because its too large
+* Allow Updating of Url
+* Better UI
+
+
