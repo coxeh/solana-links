@@ -43,4 +43,7 @@ The appliation requires the Phantom Wallet and it must be set to devnet. Make su
 * Allow Updating of Url
 * Better UI
 
+![admin page](https://github.com/coxeh/solana-links/raw/main/readme_files/sol-links.png)
 
+
+![user-page](https://github.com/coxeh/solana-links/raw/main/readme_files/sol-links1.png)
