@@ -1,0 +1,22 @@
+{
+  "name": "aim",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@project-serum/anchor": "^0.19.1-beta.1",
+    "@solana/wallet-adapter-wallets": "^0.13.0",
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.7"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^4.2.1",
+    "daisyui": "^1.21.0",
+    "tw-elements": "^1.0.0-alpha3"
+  }
+}

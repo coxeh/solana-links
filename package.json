@@ -1,0 +1,20 @@
+{
+  "name": "solana-aim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "anchor:init": "docker-compose run  --workdir=/build --rm solana anchor init",
+    "anchor:build": "docker-compose run --rm --workdir=/build/aim solana anchor build",
+    "anchor:deploy": "docker-compose exec --workdir=/build/aim solana anchor deploy",
+    "solana:keygen:new": "docker-compose exec solana solana-keygen new",
+    "solana:config:localnet": "docker-compose exec solana solana config set --url http://127.0.0.1:8899",
+    "solana:config:devnet": "docker-compose exec solana solana config set --url devnet",
+    "solana:pubkey": "docker-compose exec solana solana address -k /home/user/.config/solana/id.json",
+    "solana:airdrop": "docker-compose exec solana solana airdrop",
+    "app:build":"docker-compose run --rm web npm run generate"
+  },
+  "author": "",
+  "license": "ISC"
+}

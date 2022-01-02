@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+  web:
+    image: node
+    working_dir: /app/app
+    command: npm run dev
+    environment:
+      HOST: 0.0.0.0
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src/aim:/app
+  solana:
+    user: "1000"
+    ports:
+      - 1024:1024
+      - 1027:1027
+      - 8899:8899
+      - 8900-9000:8900-9000
+    build:
+      context: .
+      dockerfile: Dockerfile
+    working_dir: /usr/src/validator
+    command: solana-test-validator
+    volumes:
+      - ./solana:/usr/src/validator
+      - ./src:/build

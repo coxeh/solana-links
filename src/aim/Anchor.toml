@@ -1,0 +1,15 @@
+[programs.localnet]
+aim = "4M77xx2EAjoxPc6r6bZNEcijgQKFFKmbTL75keVpF7C7"
+
+[programs.devnet]
+aim = "4M77xx2EAjoxPc6r6bZNEcijgQKFFKmbTL75keVpF7C7"
+
+[registry]
+url = "https://anchor.projectserum.com"
+
+[provider]
+cluster = "devnet"
+wallet = "/home/user/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
