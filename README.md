@@ -12,6 +12,7 @@ The application will allow you to register a username if it has not already been
 * Instruction Signing
 * Owner/Authority Validation of Accounts
 * Closing Accounts
+* Searching accounts and filtering by `memcmp`
 
 ## Deployment of Solana Program
 Deploy the program first you will need to start the solana container using `docker-compose up` once done you may run this commands to upload to the devnet
